@@ -24,8 +24,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "RESegmentedItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RESegmentedItem.h>
 
 @interface RETableViewSegmentedCell : RETableViewCell
 

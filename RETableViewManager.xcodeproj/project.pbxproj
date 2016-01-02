@@ -10,9 +10,9 @@
 		3F8712011C38823100F0A002 /* RETableViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8712001C38823100F0A002 /* RETableViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F8712191C38830400F0A002 /* NSString+RETableViewManagerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8712081C38830400F0A002 /* NSString+RETableViewManagerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F87121A1C38830400F0A002 /* NSString+RETableViewManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8712091C38830400F0A002 /* NSString+RETableViewManagerAdditions.m */; };
-		3F87121B1C38830400F0A002 /* REActionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F87120A1C38830400F0A002 /* REActionBar.h */; };
+		3F87121B1C38830400F0A002 /* REActionBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F87120A1C38830400F0A002 /* REActionBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F87121C1C38830400F0A002 /* REActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87120B1C38830400F0A002 /* REActionBar.m */; };
-		3F87121D1C38830400F0A002 /* REPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F87120C1C38830400F0A002 /* REPlaceholderTextView.h */; };
+		3F87121D1C38830400F0A002 /* REPlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F87120C1C38830400F0A002 /* REPlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F87121E1C38830400F0A002 /* REPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87120D1C38830400F0A002 /* REPlaceholderTextView.m */; };
 		3F87121F1C38830400F0A002 /* RETableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F87120E1C38830400F0A002 /* RETableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F8712201C38830400F0A002 /* RETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87120F1C38830400F0A002 /* RETableViewCell.m */; };
@@ -360,6 +360,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F87121B1C38830400F0A002 /* REActionBar.h in Headers */,
+				3F87121D1C38830400F0A002 /* REPlaceholderTextView.h in Headers */,
 				3F87124C1C38831100F0A002 /* RETableViewInlinePickerCell.h in Headers */,
 				3F8712561C38831100F0A002 /* RETableViewSegmentedCell.h in Headers */,
 				3F8712521C38831100F0A002 /* RETableViewOptionCell.h in Headers */,
@@ -392,8 +394,6 @@
 				3F8712191C38830400F0A002 /* NSString+RETableViewManagerAdditions.h in Headers */,
 				3F8712231C38830400F0A002 /* RETableViewItem.h in Headers */,
 				3F8712011C38823100F0A002 /* RETableViewManager.h in Headers */,
-				3F87121B1C38830400F0A002 /* REActionBar.h in Headers */,
-				3F87121D1C38830400F0A002 /* REPlaceholderTextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +746,7 @@
 				3F87129C1C38859900F0A002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

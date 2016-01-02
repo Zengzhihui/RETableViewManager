@@ -24,7 +24,7 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewItem.h"
+#import <RETableViewManager/RETableViewItem.h>
 
 @interface RESegmentedItem : RETableViewItem
 

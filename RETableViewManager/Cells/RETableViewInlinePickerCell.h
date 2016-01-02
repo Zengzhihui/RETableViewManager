@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "RETableViewCell.h"
-#import "REInlinePickerItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/REInlinePickerItem.h>
 
 @interface RETableViewInlinePickerCell : RETableViewCell <UIPickerViewDataSource, UIPickerViewDelegate>
 

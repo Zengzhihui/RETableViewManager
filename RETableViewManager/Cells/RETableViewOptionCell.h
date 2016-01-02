@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "RERadioItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RERadioItem.h>
 
 @interface RETableViewOptionCell : RETableViewCell
 

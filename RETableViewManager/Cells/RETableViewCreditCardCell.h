@@ -24,8 +24,8 @@
 //
 
 #import <REFormattedNumberField/REFormattedNumberField.h>
-#import "RETableViewCell.h"
-#import "RECreditCardItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RECreditCardItem.h>
 
 @interface RETableViewCreditCardCell : RETableViewCell <UITextFieldDelegate>
 

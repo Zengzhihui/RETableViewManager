@@ -23,9 +23,9 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "RELongTextItem.h"
-#import "REPlaceholderTextView.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RELongTextItem.h>
+#import <RETableViewManager/REPlaceholderTextView.h>
 
 @interface RETableViewLongTextCell : RETableViewCell <UITextViewDelegate>
 

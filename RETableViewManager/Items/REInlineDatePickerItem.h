@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "RETableViewItem.h"
+#import <RETableViewManager/RETableViewItem.h>
 
 @class REDateTimeItem;
 

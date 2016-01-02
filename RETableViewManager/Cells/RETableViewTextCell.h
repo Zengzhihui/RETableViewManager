@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "RETextItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RETextItem.h>
 
 @interface RETableViewTextCell : RETableViewCell <UITextFieldDelegate>
 

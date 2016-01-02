@@ -23,7 +23,7 @@
 // THE SOFTWARE.
 //
 
-#import "RETextItem.h"
+#import <RETableViewManager/RETextItem.h>
 
 @interface RENumberItem : RETextItem
 

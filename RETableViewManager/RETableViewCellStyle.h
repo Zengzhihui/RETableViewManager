@@ -24,7 +24,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RETableViewCell.h"
+#import <RETableViewManager/RETableViewCell.h>
 
 @interface RETableViewCellStyle : NSObject <NSCopying>
 

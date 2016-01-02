@@ -24,8 +24,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RETableViewSection.h"
-#import "REActionBar.h"
+#import <RETableViewManager/RETableViewSection.h>
+#import <RETableViewManager/REActionBar.h>
 
 @class RETableViewManager;
 @class RETableViewItem;

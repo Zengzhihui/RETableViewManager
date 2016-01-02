@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewItem.h"
-#import "REInlineDatePickerItem.h"
+#import <RETableViewManager/RETableViewItem.h>
+#import <RETableViewManager/REInlineDatePickerItem.h>
 
 @interface REDateTimeItem : RETableViewItem
 

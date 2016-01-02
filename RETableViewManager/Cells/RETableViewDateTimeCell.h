@@ -23,9 +23,9 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewTextCell.h"
-#import "REDateTimeItem.h"
-#import "REInlineDatePickerItem.h"
+#import <RETableViewManager/RETableViewTextCell.h>
+#import <RETableViewManager/REDateTimeItem.h>
+#import <RETableViewManager/REInlineDatePickerItem.h>
 
 @interface RETableViewDateTimeCell : RETableViewCell <UITextFieldDelegate>
 

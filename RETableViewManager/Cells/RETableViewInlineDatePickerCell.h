@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Roman Efimov. All rights reserved.
 //
 
-#import "RETableViewCell.h"
-#import "REInlineDatePickerItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/REInlineDatePickerItem.h>
 
 @interface RETableViewInlineDatePickerCell : RETableViewCell
 

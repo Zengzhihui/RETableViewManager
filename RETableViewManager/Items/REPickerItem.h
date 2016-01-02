@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewItem.h"
-#import "REInlinePickerItem.h"
+#import <RETableViewManager/RETableViewItem.h>
+#import <RETableViewManager/REInlinePickerItem.h>
 
 @interface REPickerItem : RETableViewItem
 

@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "REPickerItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/REPickerItem.h>
 
 @interface RETableViewPickerCell : RETableViewCell <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 

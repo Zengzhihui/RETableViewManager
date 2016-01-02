@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "REFloatItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/REFloatItem.h>
 
 @interface RETableViewFloatCell : RETableViewCell
 

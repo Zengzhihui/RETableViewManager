@@ -23,8 +23,8 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewCell.h"
-#import "REBoolItem.h"
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/REBoolItem.h>
 
 @interface RETableViewBoolCell : RETableViewCell
 

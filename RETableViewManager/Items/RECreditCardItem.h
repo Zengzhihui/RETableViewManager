@@ -23,7 +23,7 @@
 // THE SOFTWARE.
 //
 
-#import "RETableViewItem.h"
+#import <RETableViewManager/RETableViewItem.h>
 
 typedef NS_ENUM(NSUInteger, RECreditCardType) {
     RECreditCardTypeUnknown,

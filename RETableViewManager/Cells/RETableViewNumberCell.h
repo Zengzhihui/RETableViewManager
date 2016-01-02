@@ -22,9 +22,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-#import "RETableViewTextCell.h"
+#import <RETableViewManager/RETableViewTextCell.h>
 #import <REFormattedNumberField/REFormattedNumberField.h>
-#import "RENumberItem.h"
+#import <RETableViewManager/RENumberItem.h>
 
 @interface RETableViewNumberCell : RETableViewTextCell
 
