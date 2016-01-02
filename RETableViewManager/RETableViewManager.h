@@ -24,40 +24,48 @@
 //
 
 #import <UIKit/UIKit.h>
+//! Project version number for RETableViewManager.
+FOUNDATION_EXPORT double RETableViewManagerVersionNumber;
+
+//! Project version string for RETableViewManager.
+FOUNDATION_EXPORT const unsigned char RETableViewManagerVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <RETableViewManager/PublicHeader.h>
+
 #import <REValidation/REValidation.h>
-#import "RETableViewSection.h"
-#import "RETableViewCellStyle.h"
-#import "RETableViewCell.h"
-#import "RETableViewBoolCell.h"
-#import "RETableViewCreditCardCell.h"
-#import "RETableViewTextCell.h"
-#import "RETableViewNumberCell.h"
-#import "RETableViewFloatCell.h"
-#import "RETableViewDateTimeCell.h"
-#import "RETableViewLongTextCell.h"
-#import "RETableViewOptionCell.h"
-#import "RETableViewPickerCell.h"
-#import "REBoolItem.h"
-#import "RERadioItem.h"
-#import "RETextItem.h"
-#import "RELongTextItem.h"
-#import "RENumberItem.h"
-#import "RECreditCardItem.h"
-#import "REFloatItem.h"
-#import "REDateTimeItem.h"
-#import "REMultipleChoiceItem.h"
-#import "REPickerItem.h"
-#import "RESegmentedItem.h"
-#import "REInlineDatePickerItem.h"
-#import "REInlinePickerItem.h"
-#import "NSString+RETableViewManagerAdditions.h"
+#import <RETableViewManager/RETableViewSection.h>
+#import <RETableViewManager/RETableViewCellStyle.h>
+#import <RETableViewManager/RETableViewCell.h>
+#import <RETableViewManager/RETableViewBoolCell.h>
+#import <RETableViewManager/RETableViewCreditCardCell.h>
+#import <RETableViewManager/RETableViewTextCell.h>
+#import <RETableViewManager/RETableViewNumberCell.h>
+#import <RETableViewManager/RETableViewFloatCell.h>
+#import <RETableViewManager/RETableViewDateTimeCell.h>
+#import <RETableViewManager/RETableViewLongTextCell.h>
+#import <RETableViewManager/RETableViewOptionCell.h>
+#import <RETableViewManager/RETableViewPickerCell.h>
+#import <RETableViewManager/REBoolItem.h>
+#import <RETableViewManager/RERadioItem.h>
+#import <RETableViewManager/RETextItem.h>
+#import <RETableViewManager/RELongTextItem.h>
+#import <RETableViewManager/RENumberItem.h>
+#import <RETableViewManager/RECreditCardItem.h>
+#import <RETableViewManager/REFloatItem.h>
+#import <RETableViewManager/REDateTimeItem.h>
+#import <RETableViewManager/REMultipleChoiceItem.h>
+#import <RETableViewManager/REPickerItem.h>
+#import <RETableViewManager/RESegmentedItem.h>
+#import <RETableViewManager/REInlineDatePickerItem.h>
+#import <RETableViewManager/REInlinePickerItem.h>
+#import <RETableViewManager/NSString+RETableViewManagerAdditions.h>
 
 @protocol RETableViewManagerDelegate;
 
 /**
- `RETableViewManager` allows to manage the content of any `UITableView` with ease, both forms and lists. `RETableViewManager` is built on top of reusable cells technique and provides 
+ `RETableViewManager` allows to manage the content of any `UITableView` with ease, both forms and lists. `RETableViewManager` is built on top of reusable cells technique and provides
  APIs for mapping any object class to any custom cell subclass.
- 
+
  The general idea is to allow developers to use their own `UITableView` and `UITableViewController` instances (and even subclasses), providing a layer that synchronizes data with the cell appereance.
  It fully implements `UITableViewDelegate` and `UITableViewDataSource` protocols so you don't have to.
  */
@@ -83,7 +91,7 @@
 
 /**
  Initialize a table view manager object for a specific `UITableView` and specify the delegate object.
- 
+
  @param tableView The `UITableView` that needs to be managed.
  @param delegate The delegate (RETableViewManagerDelegate) object for the table view manager.
  @return The pointer to the instance, or nil if initialization failed.
@@ -92,7 +100,7 @@
 
 /**
  Initialize a table view manager object for a specific `UITableView`.
- 
+
  @param tableView The UITableView that needs to be managed.
  @return The pointer to the instance, or `nil` if initialization failed.
  */
@@ -118,7 +126,7 @@
 
 /**
  For each custom item class that the manager will use, register a cell class.
- 
+
  @param objectClass The object class to be associated with a cell class.
  @param identifier The cell class identifier.
  */
@@ -126,7 +134,7 @@
 
 /**
  For each custom item class that the manager will use, register a cell class.
- 
+
  @param objectClass The object class to be associated with a cell class.
  @param identifier The cell class identifier.
  @param bundle The resource gbundle.
@@ -135,14 +143,14 @@
 
 /**
  Returns cell class at specified index path.
- 
+
  @param indexPath The index path of cell.
  */
 - (Class)classForCellAtIndexPath:(NSIndexPath *)indexPath;
 
 /**
  Returns cell class at the keyed subscript.
- 
+
  @param key The keyed subscript.
  @return The cell class the keyed subscript.
  */
@@ -150,7 +158,7 @@
 
 /**
  Sets a cell class for the keyed subscript.
- 
+
  @param obj The cell class to set for the keyed subscript.
  @param key The keyed subscript.
  */
@@ -171,21 +179,21 @@
 
 /**
  Inserts a given section at the end of the table view.
- 
+
  @param section The section to add to the end of the table view. This value must not be `nil`.
  */
 - (void)addSection:(RETableViewSection *)section;
 
 /**
  Adds the sections contained in another given sections array to the end of the table view.
- 
+
  @param array An array of sections to add to the end of the table view.
  */
 - (void)addSectionsFromArray:(NSArray *)array;
 
 /**
  Inserts a given section into the table view at a given index.
- 
+
  @param section The section to add to the table view. This value must not be nil.
  @param index The index in the sections array at which to insert section. This value must not be greater than the count of sections in the table view.
  */
@@ -193,7 +201,7 @@
 
 /**
  Inserts the sections in the provided array into the table view at the specified indexes.
- 
+
  @param sections An array of sections to insert into the table view.
  @param indexes The indexes at which the sections in sections should be inserted. The count of locations in indexes must equal the count of sections.
  */
@@ -205,20 +213,20 @@
 
 /**
  Removes all occurrences in the table view of a given section.
- 
+
  @param section The section to remove from the table view.
  */
 - (void)removeSection:(RETableViewSection *)section;
 
 /**
  Empties the table view of all its sections.
- 
+
  */
 - (void)removeAllSections;
 
 /**
  Removes all occurrences of section within the specified range in the table view.
- 
+
  @param section The section to remove from the table view within range.
  @param range The range in the table view from which to remove section.
  */
@@ -226,28 +234,28 @@
 
 /**
  Removes all occurrences of a given section in the sections array.
- 
+
  @param section The section to remove from the sections array.
  */
 - (void)removeSectionIdenticalTo:(RETableViewSection *)section;
 
 /**
  Removes from the table view the sections in another given array.
- 
+
  @param otherArray An array containing the sections to be removed from the table view.
  */
 - (void)removeSectionsInArray:(NSArray *)otherArray;
 
 /**
  Removes from the table view each of the sections within a given range.
- 
+
  @param range The range of the sections to remove from the table view.
  */
 - (void)removeSectionsInRange:(NSRange)range;
 
 /**
  Removes all occurrences within a specified range in the table view of a given section.
- 
+
  @param section The section to remove from the table view.
  @param range The range from which to remove section.
  */
@@ -255,20 +263,20 @@
 
 /**
  Removes the section with the highest-valued index in the table view.
- 
+
  */
 - (void)removeLastSection;
 
 /**
  Removes the section at index.
- 
+
  @param index The index from which to remove the section in the table view. The value must not exceed the bounds of the table view sections.
  */
 - (void)removeSectionAtIndex:(NSUInteger)index;
 
 /**
  Removes the sections at the specified indexes from the table view.
- 
+
  @param indexes The indexes of the sections to remove from the table view. The locations specified by indexes must lie within the bounds of the table view sections.
  */
 - (void)removeSectionsAtIndexes:(NSIndexSet *)indexes;
@@ -279,7 +287,7 @@
 
 /**
  Replaces the section at index with `section`.
- 
+
  @param index The index of the section to be replaced. This value must not exceed the bounds of the table view sections.
  @param section The section with which to replace the section at index `index` in the sections array. This value must not be `nil`.
  */
@@ -287,14 +295,14 @@
 
 /**
  Replaces the sections in the table view with all of the sections from a given array.
- 
+
  @param otherArray The array of sections from which to select replacements for the sections.
  */
 - (void)replaceSectionsWithSectionsFromArray:(NSArray *)otherArray;
 
 /**
  Replaces the sections in the table view at specified locations specified with the sections from a given array.
- 
+
  @param indexes The indexes of the sections to be replaced.
  @param sections The sections with which to replace the sections in the table view at the indexes specified by indexes. The count of locations in indexes must equal the count of sections.
  */
@@ -302,7 +310,7 @@
 
 /**
  Replaces the sections in the table view by one given range with the sections in another array specified by another range.
- 
+
  @param range The range of sections to replace in (or remove from) the table view.
  @param otherArray The array of sections from which to select replacements for the sections in range.
  @param otherRange The range of sections to select from otherArray as replacements for the sections in range.
@@ -311,7 +319,7 @@
 
 /**
  Replaces the sections in the table view specified by a given range with all of the sections from a given array.
- 
+
  @param range The range of sections to replace in (or remove from) the table view.
  @param otherArray The array of sections from which to select replacements for the sections in range.
  */
@@ -323,7 +331,7 @@
 
 /**
  Exchanges the sections in the table view at given indices.
- 
+
  @param idx1 The index of the section with which to replace the section at index idx2.
  @param idx2 The index of the section with which to replace the section at index idx1.
  */
@@ -331,7 +339,7 @@
 
 /**
  Sorts the sections in ascending order as defined by the comparison function compare.
- 
+
  @param compare The comparison function to use to compare two sections at a time.
  @param context The context argument to pass to the compare function.
  */
@@ -339,7 +347,7 @@
 
 /**
  Sorts the sections in ascending order, as determined by the comparison method specified by a given selector.
- 
+
  @param comparator A selector that specifies the comparison method to use to compare sections in the table view.
  */
 - (void)sortSectionsUsingSelector:(SEL)comparator;
@@ -362,7 +370,7 @@
 
 /*
  Tells the delegate the table view is about to layout a cell for a particular row.
- 
+
  @param tableView The table-view object informing the delegate of this impending event.
  @param cell A table-view cell object that tableView is going to use when drawing the row.
  @param indexPath An index path locating the row in tableView.
@@ -371,7 +379,7 @@
 
 /*
  Tells the delegate the table view is about to create a cell for a particular row and make it reusable.
- 
+
  @param tableView The table-view object informing the delegate of this impending event.
  @param cell A table-view cell object that tableView is going to create.
  @param indexPath An index path locating the row in tableView.
@@ -380,7 +388,7 @@
 
 /*
  Tells the delegate the table view has created a cell for a particular row and made it reusable.
- 
+
  @param tableView The table-view object informing the delegate of this event.
  @param cell A table-view cell object that tableView has created.
  @param indexPath An index path locating the row in tableView.
